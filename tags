@@ -1,0 +1,62 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/ccac4df/
+BaseModel	airflow_home/dags/models.py	/^class BaseModel(Model):$/;"	c
+Batch	airflow_home/dags/models.py	/^class Batch():$/;"	c
+BatchStatus	airflow_home/dags/models.py	/^class BatchStatus():$/;"	c
+DocInterfaceOperator	airflow_home/dags/skynet.py	/^class DocInterfaceOperator(BaseOperator):$/;"	c
+Document	airflow_home/dags/models.py	/^class Document(BaseModel):$/;"	c
+DocumentStatus	airflow_home/dags/models.py	/^class DocumentStatus(BaseModel):$/;"	c
+ExtractorSensor	airflow_home/dags/skynet.py	/^class ExtractorSensor(BaseSensorOperator):$/;"	c
+Meta	airflow_home/dags/models.py	/^    class Meta:$/;"	c	class:BaseModel
+MyFirstOperator	airflow_home/plugins/my_operators.py	/^class MyFirstOperator(BaseOperator):$/;"	c
+MyFirstPlugin	airflow_home/plugins/my_operators.py	/^class MyFirstPlugin(AirflowPlugin):$/;"	c
+MyFirstSensor	airflow_home/plugins/my_operators.py	/^class MyFirstSensor(BaseSensorOperator):$/;"	c
+OCRSensor	airflow_home/dags/skynet.py	/^class OCRSensor(BaseSensorOperator):$/;"	c
+PreProcessingOperator	airflow_home/dags/skynet.py	/^class PreProcessingOperator(BaseOperator):$/;"	c
+__init__	airflow_home/dags/skynet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:DocInterfaceOperator
+__init__	airflow_home/dags/skynet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:ExtractorSensor
+__init__	airflow_home/dags/skynet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:OCRSensor
+__init__	airflow_home/dags/skynet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:PreProcessingOperator
+__init__	airflow_home/plugins/my_operators.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:MyFirstSensor
+__init__	airflow_home/plugins/my_operators.py	/^    def __init__(self, my_operator_param, *args, **kwargs):$/;"	m	class:MyFirstOperator
+batch	airflow_home/dags/models.py	/^    batch = ForeignKeyField(Batch, backref="batches")$/;"	v	class:Document
+batch	airflow_home/dags/models.py	/^    batch = ForeignKeyField(Batch, backref='batches')$/;"	v	class:BatchStatus
+batch_dag	airflow_home/dags/skynet.py	/^batch_dag = DAG($/;"	v
+created_date	airflow_home/dags/models.py	/^    created_date = DateTimeField(default=datetime.datetime.now)$/;"	v	class:Batch
+created_date	airflow_home/dags/models.py	/^    created_date = DateTimeField(default=datetime.datetime.now)$/;"	v	class:BatchStatus
+created_date	airflow_home/dags/models.py	/^    created_date = DateTimeField(default=datetime.datetime.now)$/;"	v	class:Document
+created_date	airflow_home/dags/models.py	/^    created_date = DateTimeField(default=datetime.datetime.now)$/;"	v	class:DocumentStatus
+dag	airflow_home/dags/hello_world.py	/^dag = DAG('hello_world', description='Simple tutorial DAG',$/;"	v
+dag	airflow_home/dags/test_operators.py	/^dag = DAG('my_test_dag', description='Another tutorial DAG',$/;"	v
+database	airflow_home/dags/models.py	/^        database = db$/;"	v	class:BaseModel.Meta
+db	airflow_home/dags/models.py	/^db = SqliteDatabase('my_database.db')$/;"	v
+doc_op	airflow_home/dags/skynet.py	/^doc_op = DocInterfaceOperator($/;"	v
+document	airflow_home/dags/models.py	/^    document = ForeignKeyField(Document, backref='documents')$/;"	v	class:DocumentStatus
+dummy_operator	airflow_home/dags/hello_world.py	/^dummy_operator = DummyOperator(task_id='dummy_task', retries=3, dag=dag)$/;"	v
+dummy_task	airflow_home/dags/test_operators.py	/^dummy_task = DummyOperator(task_id='dummy_task', dag=dag)$/;"	v
+execute	airflow_home/dags/skynet.py	/^    def execute(self, context):$/;"	m	class:DocInterfaceOperator
+execute	airflow_home/dags/skynet.py	/^    def execute(self, context):$/;"	m	class:PreProcessingOperator
+execute	airflow_home/plugins/my_operators.py	/^    def execute(self, context):$/;"	m	class:MyFirstOperator
+extractor_sensor	airflow_home/dags/skynet.py	/^extractor_sensor = ExtractorSensor($/;"	v
+filename	airflow_home/dags/models.py	/^    filename = CharField()$/;"	v	class:Document
+gs_dag	airflow_home/dags/skynet.py	/^gs_dag = DAG($/;"	v
+hello_operator	airflow_home/dags/hello_world.py	/^hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hello, dag=dag)$/;"	v
+log	airflow_home/dags/skynet.py	/^log = logging.getLogger(__name__)$/;"	v
+log	airflow_home/plugins/my_operators.py	/^log = logging.getLogger(__name__)$/;"	v
+name	airflow_home/plugins/my_operators.py	/^    name = "my_first_plugin"$/;"	v	class:MyFirstPlugin
+ocr_sensor	airflow_home/dags/skynet.py	/^ocr_sensor = OCRSensor($/;"	v
+operator_task	airflow_home/dags/test_operators.py	/^operator_task = MyFirstOperator(my_operator_param='This is a test.',$/;"	v
+operators	airflow_home/plugins/my_operators.py	/^    operators = [MyFirstOperator, MyFirstSensor]$/;"	v	class:MyFirstPlugin
+poke	airflow_home/dags/skynet.py	/^    def poke(self, context):$/;"	m	class:ExtractorSensor
+poke	airflow_home/dags/skynet.py	/^    def poke(self, context):$/;"	m	class:OCRSensor
+poke	airflow_home/plugins/my_operators.py	/^    def poke(self, context):$/;"	m	class:MyFirstSensor
+preprocess_operator	airflow_home/dags/skynet.py	/^preprocess_operator = PreProcessingOperator($/;"	v
+print_hello	airflow_home/dags/hello_world.py	/^def print_hello():$/;"	f
+sensor_task	airflow_home/dags/test_operators.py	/^sensor_task = MyFirstSensor(task_id='my_sensor_task', poke_interval=30, dag=dag)$/;"	v
+status	airflow_home/dags/models.py	/^    status = CharField()$/;"	v	class:BatchStatus
+status	airflow_home/dags/models.py	/^    status = CharField()$/;"	v	class:DocumentStatus

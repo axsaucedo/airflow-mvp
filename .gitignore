@@ -1,0 +1,3 @@
+airflow_home/logs
+airflow.db
+.DS_Store
